@@ -111,17 +111,6 @@ public class Weapon_RemoteControl : MonoBehaviour
         //muzzle.rotation = Quaternion.Euler(new Vector3(0, 0, angle));//即時
 
         Gameobject.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-
-        // 檢查角色是否被翻轉，如果是，校正槍口方向
-        /*
-        if (playercontroler.IsFlipped())
-        {
-            // 將角度補偿 180 度
-            angle += 180f;
-            // 旋轉槍口使其指向鼠標
-            muzzle.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-        }
-        */
     }
 }
 
